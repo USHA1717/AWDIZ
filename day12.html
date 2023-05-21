@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day12</title>
+    <style>
+        * {
+
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #screen {
+            width: 100%;
+
+            /* border: 1px solid black; */
+        }
+
+        #navbar {
+            width: 100%;
+            height: 300px;
+            display: flex;
+
+            /* border: 1px solid red; */
+            display: flex;
+        }
+
+        #body {
+            width: 80%;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #body>div:nth-child(1) {
+            width: 20%;
+            /* border: 1px solid black; */
+            font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+
+        }
+
+        #body>div:nth-child(2) {
+            width: 70%;
+            /* border: 2px solid black; */
+        }
+        #body>div:nth-child(1)>div{
+            /* border-bottom: 2px solid black; */
+            margin-left: 22px;
+        }
+        #body>div:nth-child(1)>div>H4{
+            margin-top: 15px;
+            margin-bottom: 15PX;
+        }
+        #body>div:nth-child(1)>div>input,label{
+            
+            margin-bottom: 15PX;
+        }
+        #product{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        #product>div{
+            width:20%;
+            margin-bottom: 20px;
+            height: 300px;
+        }
+        #product>div:hover {
+            border:1px solid white;
+        }
+        #product>div>img{
+            width: 70px;
+            height:60%;
+        }
+        #product>div>h4,p{
+            margin-left: 22px;
+            margin-bottom: 5px;
+        }
+        #product>div>h4:nth-child(2){
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div></div>
+            <div></div>
+        </div>
+        <div id="body">
+            <div> <!-- Left Start-->
+                <div>
+                    <H4>CATEGORIES</H4>
+                    <input type="checkbox" />
+                    <label>Tshirts(96180)</label><br>
+                    <input type="checkbox" />
+                    <label>Tshirts(96171)</label><br>
+                </div>
+                <div>
+                    <h4>BRAND</h4>
+                    <input type="checkbox" />
+                    <label>Roadster(6278)</label><br>
+                    <input type="checkbox" />
+                    <label>Allen Solly(3632)</label><br>
+                </div>
+                <div>
+                    <h4>PRICE</h4>
+                    <input type="checkbox" />
+                    <label>Rs. 149 to Rs. 2362(11939)</label><br>
+                    <input type="checkbox" />
+                     <label>Rs. 2362 to Rs. 4575(544)</label><br>
+                </div>
+                <div>
+                    <h4>COLOR</h4>
+                    <input type="checkbox" />
+                    <label>Blue (1936)</label><br>
+                    <input type="checkbox" />
+                    <label>Navy Blue (1770)</label><br>
+                </div>
+                <div>
+                    <h4>DISCOUNT RANGE</h4><br>
+                    <input type="checkbox" />
+                    <label>10% and above</label><br>
+                    <input type="checkbox" />
+                    <label>20% and above</label><br>
+                </div>
+            </div>          <!--Left Over-->
+            <div id="product">    <!--Right Start-->
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"  alt="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" title="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" style="width: 100%; display: block;">
+                    <h4>Roadster</h4>
+                    <p>TishIrt</p>
+                    <h4>2000</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"  alt="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" title="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" style="width: 100%; display: block;">
+                   <h4>Allen solly</h4> 
+                   <p>Tishirt</p>
+                   <h4>1500</h4>
+
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"  alt="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" title="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" style="width: 100%; display: block;">
+                    <h4>puma</h4>
+                    <p>Tishirt</p>
+                    <h4>3000</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"  alt="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" title="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" style="width: 100%; display: block;">
+                    <h4>Huestrap</h4>
+                    <p>tishirt</p>
+                    <h4>2500</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"  alt="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" title="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" style="width: 100%; display: block;">
+                    <h4>Louis</h4>
+                    <p>Tishirt</p>
+                    <h4>1700</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"  alt="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" title="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" style="width: 100%; display: block;">
+                    <h4>Campus</h4>
+                    <p>Tishirt</p>
+                    <h4>1220</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"  alt="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" title="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" style="width: 100%; display: block;">
+                    <h4>addidas</h4>
+                    <p>Tishirt</p>
+                    <h4>1800</h4>
+                </div>
+                <div>
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11545192/2022/3/25/626b0419-cbb0-4200-8490-67e20a0021c51648208612203-Roadster-Men-Green--White-Printed-Round-Neck-Pure-Cotton-T-s-1.jpg"  alt="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" title="Roadster Men Green  White Printed Round Neck Pure Cotton T-shirt" style="width: 100%; display: block;">
+                    <h4>High lander</h4>
+                    <p>Tishirt</p>
+                    <h4>1299</h4>
+                </div>
+            </div><!--Right Over-->
+
+        </div>
+</body>
+
+</html>
